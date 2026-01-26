@@ -1,0 +1,64 @@
+START 
+Declare a 3D array with 3 matrices(wards) of 3 rows(days) and 3 columns(Time Slots)
+SET max=occupancy[0][0][0]
+SET ovward=0, ovday=0, ovtime=0
+FOR ward i from 0 to number of wards-1 DO
+SET sum=0
+SET count=0
+FOR day j from 0 to number of days-1 DO
+FOR timeSlot k from 0 to number of time slots-1 DO
+sum=sum+occupancy[i][j][k]
+count=count+1
+IF occupancy[i][j][k] is greater than max
+SET max=occupancy[i][j][k]
+SET ovward=ward
+SET ovday=day
+SET ovtime=time
+END IF
+END FOR
+END FOR
+SET average=sum/count
+IF average is greater than or equal to 45
+SET condition=true
+END IF
+PRINT"Ward i overloaded = condition"
+END FOR
+SET stress=false
+FOR day i from 0 to number of days-1 DO
+SET sum=0
+SET count=0
+FOR ward j from 0 to number of wards-1 Do
+FOR time slots k from 0 to number of time slots-1 DO
+sum=sum+occupancy[i][j][k]
+count=count+1
+END FOR
+END FOR
+SET dayaverage=sum/count
+IF dayaverage is greater than 40
+SET stress=true
+break the loop i
+END IF
+END FOR
+PRINT"Hospital under stress=stress"
+PRINT"Maximum occupancy=max ward=ovward day=ovday time=ovtime"
+END
+
+
+Explaination:
+- each matrix represents a ward
+- each row represents a day
+- each column represents a time slot
+- The first outer loop moves ward wise
+- The first middle loop moves day wise
+- The first inner loop accumulates sum of patients across time slots, increments count by 1 and checks if the number of patients is greater than max or not.
+- if number of patients is greater than max then max is set to the number of patients at that index
+- average is calculated by sum divide by count
+- if average is greater than or equal to 45 then ward is printed as overloaded, else not.
+-The second loop starts from days->ward->time slots to check average patients across all wards and time slots in a day.
+- sum and count are re-initialized
+- The inner loop accumulates sum and increments count
+- average is calculated and if day average is greater than 40 hospital is marked a sunder stress
+
+
+
+

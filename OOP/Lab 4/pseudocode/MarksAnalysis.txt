@@ -1,0 +1,22 @@
+START
+Declare a 3D array marks with 2 matrices(class) of 2 rows(student) and 2 columns(subject)
+FOR class i from 0 to number of class-1 DO
+FOR student j from 0 to number of students-1 DO
+SET total=0
+FOR subject k from 0 to number of subjects-1 DO
+total=total+marks[i][j][k]
+END FOR
+PRINT"Class i student j total=total"
+END FOR 
+END FOR
+END
+
+
+Explaination:
+- each matrix represents a class
+- each row represent a student
+- each column represents a subject
+- outer loop moves class wise
+- middle loop moves student wise
+- inner loop accumulates marks of the student
+

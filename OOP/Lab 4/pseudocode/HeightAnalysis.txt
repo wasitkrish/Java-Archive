@@ -1,0 +1,29 @@
+START
+Declare a 2D array with 3 rows(Class) and 3 columns(heights)
+SET max=height[0][0]
+SET sum=0
+SET count=0
+FOR class i from 0 to number of classes-1 DO
+FOR height j from 0 to number of heights-1 DO
+sum=sum+heights[i][j]
+count=count+1
+IF heights[i][j] is greater than max
+SET max=heights[i][j]
+END IF
+END FOR
+END FOR
+PRINT"Maximum height=max"
+PRINT"Average height=sum/count"
+END
+
+
+Explaination:
+- each row represents a class
+- each column represents height of students in that class
+- max height is initially set to the first height at index (0,0)
+- outer loop moves class wise
+- inner loop accumulates heights of student in that class, and keeps increasing the count.
+- if condition is set up in the inner loop that checks if the height at current index is greater than the max height, if yes max height is set to the height at current index else the program continues without change
+- average is given by sum of all heights divided by count (total number of heights)
+
+

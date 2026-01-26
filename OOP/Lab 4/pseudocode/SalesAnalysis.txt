@@ -1,0 +1,17 @@
+START
+Declare a 2D array with 3 rows(products) and 4 columns(days)
+FOR each product i from 0 to product-1 Do
+SET sum=0
+FOR each day j from 0 to day-1 Do
+sum=sum+sales[i][j]
+END FOR
+PRINT"Product i total sales=sum"
+END FOR
+END
+
+
+Explaination:
+- each row represents one product
+- each column represents sales for a day
+- outer loop -> moves product wise
+- inner loop -> accumulates daily sales for that product

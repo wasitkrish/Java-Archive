@@ -1,0 +1,31 @@
+START
+Declare a 3D array temperatures with 2 matrices(rooms) of 2 rows(days) and 2 columns(temperatures)
+
+START
+FOR each room i from 0 to number of rooms-1 DO
+SET sum=0
+SET count=0
+FOR each day j from 0 to number of days-1 DO
+FOR each temp k from 0 to number of temp-1 DO
+sum=sum+temperature[i][j][k]
+count=count+1
+END FOR
+END FOR
+PRINT"Room i average = sum/count"
+END FOR
+END
+
+
+Explaination:
+- each matrix represents a room
+- each row represents a day
+- each column represents a temperature reading
+- outer loop moves room wise
+- sum and count are initially set to 0
+- middle loop moves day wise
+- inner loop accumulates temperature readings and increases the count by 1
+- average room temperature is given by sum/count
+
+
+
+

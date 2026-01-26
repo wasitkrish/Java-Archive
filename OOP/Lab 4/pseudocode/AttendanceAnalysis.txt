@@ -1,0 +1,20 @@
+START
+Declare a 2D array attendance with 3 rows(Students) and 5 columns(days)
+(1=present, 0=absent)
+
+FOR each student i from 0 to number of students-1 DO
+SET sum=0
+FOR each day j from 0 to number of days-1 DO
+sum=sum+attendance[i][j]
+END FOR
+PRINT"Student i attendance=sum"
+END FOR
+END
+
+
+Explaination:
+- each row represents a student
+- each column represents days that student was present or absent
+- present is represented by 1 and absent by 0 on each day
+- adding ones directly gives total presence count
+- structure is row wise traversal same as matrix logic
