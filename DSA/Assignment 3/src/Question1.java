@@ -10,7 +10,7 @@ public class Question1 {
         int[] N = {5, 10, 20, 50, 100, 200, 500};
         System.out.print("Enter a number to search for N :");
         int search = sc.nextInt();
-        try (FileWriter csvWriter = new FileWriter("/home/krish/Desktop/Java-Archive/DSA/Assignment 3/plots/Question12.csv")) {
+        try (FileWriter csvWriter = new FileWriter("/data/Question12.csv")) {
             csvWriter.append("N,ExecutionTimeNs\n");
             for (int i = 0; i < N.length; i++) {
                 int[] arr = new int[N[i]];

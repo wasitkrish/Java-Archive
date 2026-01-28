@@ -1,13 +1,15 @@
 import java.util.Scanner;
+import java.util.Random;
 import java.io.FileWriter;
 import java.io.IOException;
 public class Question2{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        Random rand = new Random(0);
         int[] N={5, 10, 20, 50, 100, 200, 500};
         System.out.print("Enter elements to search for N size : ");
         int search=sc.nextInt();
-        try(FileWriter csvWriter = new FileWriter("/home/krish/Desktop/Java-Archive/DSA/Assignment 3/plots/Question23.csv")) {
+        try(FileWriter csvWriter = new FileWriter("/data/Question2.csv")) {
             csvWriter.append("N,ExecutionTime\n");
             for (int i = 0; i < N.length; i++) {
                 int count = 0;
@@ -15,7 +17,7 @@ public class Question2{
                 double total=0;
                 int[] arr = new int[N[i]];
                 for (int j = 0; j < N[i]; j++) {
-                    arr[j] += j+1;
+                    arr[j] =rand.nextInt();
                 }
                 boolean check=false;
                 int index=0;

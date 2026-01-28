@@ -5,7 +5,7 @@ public class Question4{
     public static void main(String[] args){
         Random rand = new Random();
         int[] N={5,10,20,50,100,200,500};
-        try(FileWriter csvWriter = new FileWriter("/home/krish/Desktop/Java-Archive/DSA/Assignment 3/plots/Question4.csv")){
+        try(FileWriter csvWriter = new FileWriter("/data/Question4.csv")){
             csvWriter.append("N,Execution time\n");
         for(int i=0;i<N.length;i++) {
             int[] A = new int[N[i]];

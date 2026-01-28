@@ -7,7 +7,7 @@ public class Question3{
         int[] N={5,10,20,50,100,200,500};
         Scanner sc = new Scanner(System.in);
         Random rand = new Random(0);
-        try(FileWriter csvWriter = new FileWriter("/home/krish/Desktop/Java-Archive/DSA/Assignment 3/plots/Question3.csv")) {
+        try(FileWriter csvWriter = new FileWriter("/data/Question3.csv")) {
             csvWriter.append("N,Execution Time \n");
             System.out.print("Enter a number to check : ");
             int check = sc.nextInt();
