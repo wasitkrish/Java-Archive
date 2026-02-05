@@ -7,39 +7,30 @@ public class InsertBeginning{
             this.next=null;
         }
     }
-    static void insertStart(Node head){
+    static Node insertStart(Node head){
         Node temp=head;
-        Node newFirst = new Node("Epstein");
+        Node newFirst = new Node("Rohit");
         newFirst.next=temp;
-        head.next=newFirst;
+        head=newFirst;
+        return(head);
     }
     static void traverse(Node head){
-        int count=0;
-        Node temp=head;
-        while(head!=null){
-            count++;
-            head=head.next;
-        }
-        System.out.println("Number of students : "+count);
-        System.out.println("Students in the group project");
-        head=temp;
-        while(head!=null){
-            System.out.println(head.name);
-            head=head.next;
+        Node temp = head;
+        while(temp!=null){
+            System.out.println(temp.name);
+            temp=temp.next;
         }
     }
     public static void main(String[] arrange){
         Node first = new Node("Aditi");
         Node second = new Node("Arun");
         Node third = new Node("Venu");
-        Node fourth = new Node("Krish");
-        Node fifth = new Node("Aadi");
-
         first.next=second;
         second.next=third;
-        third.next=fourth;
-        fourth.next=fifth;
-        insertStart(first);
-        traverse(head);
+        System.out.println("Initial List Before Insertion :");
+        traverse(first);
+        Node newFirst = insertStart(first);
+        System.out.println("\n The updated list is :");
+        traverse(newFirst);
     }
 }
