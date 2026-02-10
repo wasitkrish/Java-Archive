@@ -19,3 +19,10 @@ public class Test7 {
         p2.display();
     }
 }
+
+
+/** This program demonstrates the use of a constructor for data validation.
+ The class Product contains a parameterized constructor that checks whether the input value for price is valid.
+ If the value passed is greater than zero, it is assigned to price; otherwise, a default value of 1 is assigned.
+ This ensures that every object of the class is initialized with a valid price at the time of object creation.
+ The display() method is used to print the price of the product. **/
