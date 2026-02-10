@@ -9,11 +9,11 @@ public class Question2{
         int[] N={5, 10, 20, 50, 100, 200, 500};
         System.out.print("Enter elements to search for N size : ");
         int search=sc.nextInt();
-        try(FileWriter csvWriter = new FileWriter("/data/Question2.csv")) {
+        try(FileWriter csvWriter = new FileWriter("/data/Question3.xlsx")) {
             csvWriter.append("N,ExecutionTime\n");
             for (int i = 0; i < N.length; i++) {
                 int count = 0;
-                int iteration=500;
+                int iteration=1000;
                 double total=0;
                 int[] arr = new int[N[i]];
                 for (int j = 0; j < N[i]; j++) {
