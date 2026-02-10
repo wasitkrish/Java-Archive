@@ -28,20 +28,17 @@ public class FinalTask{
 }
 
 /**
- * The class LibraryBook represents a book with mandatory and optional attributes.
- * It contains three instance variables: bookId, title, and availability.
- *
- * A private default constructor is defined to prevent the creation of a LibraryBook
- * object without mandatory information such as bookId and title.
- * This ensures that objects cannot be instantiated using new LibraryBook()
- * from outside the class.
- *
- * Parameterized constructors are provided to enforce initialization of the
- * mandatory fields at the time of object creation, while allowing flexibility
- * for optional fields like availability.
- *
- * As a result, every LibraryBook object is created in a valid and consistent state,
- * ensuring data integrity and controlled object creation.
+The class LibraryBook represents a book with mandatory and optional attributes.
+It contains three instance variables: bookId, title, and availability.
+A private default constructor is defined to prevent the creation of a LibraryBook
+object without mandatory information such as bookId and title.
+This ensures that objects cannot be instantiated using new LibraryBook()
+ from outside the class.
+Parameterized constructors are provided to enforce initialization of the
+ mandatory fields at the time of object creation, while allowing flexibility
+ for optional fields like availability.
+ As a result, every LibraryBook object is created in a valid and consistent state,
+ ensuring data integrity and controlled object creation.
  */
 
 
