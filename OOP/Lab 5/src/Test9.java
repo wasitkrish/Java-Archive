@@ -11,3 +11,4 @@ public class Test9{
         Secure s = Secure.createObject();
     }
 }
+
