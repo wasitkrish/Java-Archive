@@ -45,7 +45,7 @@ public class InsertDoubly {
     }
     static void traverse(Node head){
         while(head!=null){
-            System.out.println(head.value);
+            System.out.print(head.value+" ");
             head=head.next;
         }
     }
