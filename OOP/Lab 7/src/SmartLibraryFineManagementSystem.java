@@ -30,7 +30,12 @@ class Student extends LibraryMember{
         super(id,name,days);
     }
     public double calculateFine(){
-        return 0;
+        if(getDaysLate()>30){
+            return 5*getDaysLate()+200;
+        }
+        else{
+            return 5*getDaysLate();
+        }
     }
 }
 class Faculty extends LibraryMember{
@@ -38,7 +43,7 @@ class Faculty extends LibraryMember{
         super(id,name,days);
     }
     public double calculateFine(){
-        return 0;
+        return 2*getDaysLate();
     }
 }
 class Guest extends LibraryMember{
@@ -46,6 +51,22 @@ class Guest extends LibraryMember{
         super(id,name,days);
     }
     public double calculateFine(){
-        return 0;
+        if(getDaysLate()>15){
+            return 10*getDaysLate()+500;
+        }
+        else {
+            return getDaysLate()*10;
+        }
+    }
+}
+public class SmartLibraryFineManagementSystem{
+    public static void main(String[] args){
+        LibraryMember[] memb = new LibraryMember[3];
+        memb[0]=new Student(1,"Arjun",40);
+        memb[1]=new Faculty(2,"Meera",20);
+        memb[2]=new Guest(3,"Rahul",20);
+        for(int i=0;i<3;i++){
+            memb[i].displayFine();
+        }
     }
 }
