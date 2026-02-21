@@ -15,9 +15,9 @@ class Program{
         return fees;
     }
     public void display(){
-        System.out.println("Student: "+name);
-        System.out.println("Total Fee: "+calculatefees());
-        System.out.println("\n");
+        System.out.print("Student: "+name);
+        System.out.print("Total Fee: "+calculatefees());
+        System.out.print("\n");
     }
 }
 class Undergraduate extends Program{

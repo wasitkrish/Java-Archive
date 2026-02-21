@@ -8,9 +8,9 @@ class Vehicle {
         return vehicleno;
     }
     void display(){
-        System.out.println("Vehicle no :"+vehicleno);
-        System.out.println("Toll to be paid : "+calculatetoll());
-        System.out.println("\n");
+        System.out.print("Vehicle no :"+vehicleno);
+        System.out.print("Toll to be paid : "+calculatetoll());
+        System.out.print("\n");
     }
     public double calculatetoll(){
         return basetoll;

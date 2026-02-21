@@ -25,10 +25,10 @@ class Order {
         return itemPrice + 200;
     }
     public void display() {
-        System.out.println("Order ID: " + orderId);
-        System.out.println("Customer: " + customerName);
-        System.out.println("Total Bill: " + calculateTotal());
-        System.out.println("\n");
+        System.out.print("Order ID: " + orderId);
+        System.out.print("Customer: " + customerName);
+        System.out.print("Total Bill: " + calculateTotal());
+        System.out.print("\n");
     }
 }
 
