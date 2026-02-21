@@ -10,6 +10,10 @@ public class CountNumberOfNodesInCircularLinkList{
         }
     }
     static void count(Node head){
+        if(head == null){
+            System.out.println("Total Nodes: 0");
+            return;
+        }
         int count=0;
         Node temp=head;
         do{
