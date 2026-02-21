@@ -11,19 +11,16 @@ public class ReverseDoubly{
         }
     }
     static Node reverse(Node head) {
-        Node temp = null;
-        Node current = head;
-        while (current != null) {
-            temp = current.prev;
-            current.prev = current.next;
-            current.next = temp;
-            current = current.prev;  // move using swapped prev
+        Node temp;
+        Node add = null;
+        while(head!=null){
+            temp = head.prev;
+            head.prev=head.next;
+            head.next=temp;
+            add = head;
+            head=head.prev;
         }
-        // After loop, temp will be at node before new head
-        if (temp != null) {
-            head = temp.prev;
-        }
-        return head;
+        return add;
     }
 
     static void traverse(Node head){
