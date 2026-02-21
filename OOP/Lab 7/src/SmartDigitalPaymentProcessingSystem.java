@@ -1,4 +1,4 @@
-class Payment{
+abstract class Payment{
     private String transactionID;
     private String Payer;
     private double FinalAmount;
