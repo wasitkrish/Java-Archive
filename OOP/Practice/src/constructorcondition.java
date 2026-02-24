@@ -12,6 +12,9 @@ class Demo{
     void display(){
         System.out.println(n);
     }
+    Demo(){
+        this("krish");
+    }
 }
 public class constructorcondition{
     public static void main(String[] args){
@@ -19,6 +22,8 @@ public class constructorcondition{
         System.out.print("enter a name: ");
         String ln = sc.nextLine();
         Demo obj = new Demo(ln);
+        Demo obj2 = new Demo();
         obj.display();
+        obj2.display();
     }
 }
