@@ -8,9 +8,7 @@ class con{
         this.name=n;
     }
     public con(int a, int b){
-        this.first=a;
-        this.second=b;
-        this.name="Krish";
+        this(a,b,"Krish");
     }
     public void display(){
         System.out.println(first+" "+second+" and "+name);
