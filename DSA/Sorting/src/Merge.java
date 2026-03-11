@@ -24,7 +24,7 @@ public class Merge{
     public static void mergesort(int[] arr, int start, int end){
         if(start<end){
             int mid = start + (end-start)/2;
-            mergesort(arr,start,mid); 
+            mergesort(arr,start,mid);
             mergesort(arr,mid+1,end);
             merge(arr,start,mid,end);
         }
