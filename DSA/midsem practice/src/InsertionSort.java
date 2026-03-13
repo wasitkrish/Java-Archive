@@ -1,27 +1,11 @@
-public class Selectionsort{
+public class InsertionSort{
     static void sortcalc(int[] A){
-        int n= A.length;
-        int count=0;
-        for(int i=0;i<n-1;i++){
-            int minindex=i;
-            for(int j=i+1;j<n;j++){
-                count++;
-                if(A[j]<A[minindex]){
-                    minindex=j;
-                }
-                if(minindex!=i){
-                    int temp = A[i];
-                    A[i]=A[minindex];
-                    A[minindex]=temp;
-                }
-            }
-        }
-        System.out.println("No of comparisions = "+count);
+        int n=A.length;
+        
         System.out.print("\n Sorted Array Elements are: ");
         for(int i=0;i<n;i++){
             System.out.print(A[i]+" ");
         }
-
     }
     public static void main(String[] args){
         int[] a1 ={34, 12, 5, 66, 1, 89, 23};
@@ -39,5 +23,6 @@ public class Selectionsort{
         System.out.println();
         sortcalc(a5);
         System.out.println();
+
     }
 }
