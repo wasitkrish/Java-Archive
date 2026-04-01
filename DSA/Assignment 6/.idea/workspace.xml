@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7afc4905-eaa1-4536-ae89-cd922459a3fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../midsem practice/src/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../midsem practice/src/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../midsem practice/src/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../midsem practice/src/InsertionSort.java" afterDir="false" />
+    <list default="true" id="bfd2e8fa-90ab-4ee0-9532-6d9d8ed7100e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Assignment 6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OOP/Lab 9/Docs/.~lock.Lab_9_AID25072.odt#" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +18,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="3BfMz3IHpOtdv7yNQXLtmbL7Y7a" />
+  <component name="ProjectId" id="3BlXL8IyZQX2OEZEiKOV31WtkWV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,7 +33,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/krish/Desktop/Java-Archive/DSA/Assignment 6"
+    "last_opened_file_path": "/home/krish/Desktop/Java-Archive/DSA/Assignment 7",
+    "onboarding.tips.debug.path": "/home/krish/Desktop/Java-Archive/DSA/Assignment 6/src/Main.java"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -40,11 +46,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7afc4905-eaa1-4536-ae89-cd922459a3fd" name="Changes" comment="" />
-      <created>1774875929267</created>
+      <changelist id="bfd2e8fa-90ab-4ee0-9532-6d9d8ed7100e" name="Changes" comment="" />
+      <created>1775064572963</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1774875929267</updated>
+      <updated>1775064572963</updated>
     </task>
     <servers />
   </component>
