@@ -1,0 +1,91 @@
+# =========================
+
+# IDE / Editor Folders
+
+# =========================
+
+.idea/
+.vscode/
+*.code-workspace
+
+# JetBrains
+
+*.iml
+out/
+
+# Eclipse
+
+.project
+.classpath
+.settings/
+
+# NetBeans
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+
+# =========================
+
+# Build / Compiled Files
+
+# =========================
+
+*.class
+*.jar
+*.war
+*.ear
+target/
+bin/
+
+# =========================
+
+# Logs & Temp Files
+
+# =========================
+
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# =========================
+
+# OS Generated Files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+
+# Environment / Config
+
+# =========================
+
+.env
+.env.*
+*.local
+
+# =========================
+
+# Dependency directories
+
+# =========================
+
+node_modules/
+vendor/
+
+# =========================
+
+# Misc
+
+# =========================
+
+*.bak
+*.cache
+coverage/
