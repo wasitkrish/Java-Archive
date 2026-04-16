@@ -4,11 +4,13 @@ public class ProductPriceSelectionSort {
         int[][] data = t.a;
         for (int all = 0; all < data.length; all++) {
             int n= data[all].length;
+            int comp=0;
             for (int i = 0; i < n; i++) {
                 int minindex = i;
                 for (int j = i + 1; j < n; j++) {
                     if(data[all][j]<data[all][minindex]){
                         minindex=j;
+                        comp++;
                     }
                 }
                 if(minindex!=i){
@@ -21,6 +23,8 @@ public class ProductPriceSelectionSort {
             for(int i=0;i<n;i++){
                 System.out.print(data[all][i]+" ");
             }
+            System.out.println();
+            System.out.println("Number of comparisons made is: "+comp);
             System.out.println();
         }
     }
