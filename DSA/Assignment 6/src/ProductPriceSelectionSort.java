@@ -4,6 +4,8 @@ public class ProductPriceSelectionSort {
         int[][] data = t.a;
         for (int all = 0; all < data.length; all++) {
             int n= data[all].length;
+
+
             int comp=0;
             for (int i = 0; i < n; i++) {
                 int minindex = i;
